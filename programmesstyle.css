@@ -1,8 +1,8 @@
-body {}
-.navbar {
-	padding: 0;
+body {
+	font-family: "Montserrat";
 
 }
+
 .navbar {
 	background-color: #556052;
 	border-radius: 40px 0 40px 0;
@@ -35,13 +35,18 @@ body {}
 	margin-left: auto;
 }
 .nav-item {
-	padding-left: 70px;
-/*	background-size: 110px 40px;
+	width: 195px;
+	background-size: 110px 40px;
 	border-radius: 50px;
 	background: #556052;
 	box-shadow: inset 20px 20px 60px #222621,
             	inset -20px -20px 60px #889a83;
-*/}
+}
+.fa, .fab, .fas{
+	padding-left: 0px;
+    padding-right: 15px;
+	color: #fadcaa;
+} 
 .nav-link {
 	color: #fadcaa;
 
@@ -93,11 +98,39 @@ body {}
 
 /*****************Main Content********************/
 .main-heading {
-	padding-top: 150px;
+	background-image: url(careforworld.jpg),url(childcare.jpg), url(povertyeradication.jpg),
+	linear-gradient(to right, rgba(132, 132, 138, 100),rgba(223, 219, 219, 100), rgba(255, 255, 255, 100));
+	background-size: contain;
+	background-color: transparent;
+	font-size: 80px;
+	font-weight: 120px;
+	padding-top: 120px;
+	text-align: center;
+	background-repeat: no-repeat,
+  		no-repeat,
+      	no-repeat;
+  	background-position: center,
+  		bottom right,
+      	bottom left;}
+
+.main-heading>h1 {
+	font-size: 70px;
+	line-height: 150px;
+	margin-bottom: 0px;
+	color: #fff;
+}
+.main-content {
 	background-color: #8db596;
 	text-align: center;
-	padding-left: 15%;
-	padding-right: 15%
+	padding-left: 5%;
+	padding-right: 5%;
+
+}
+
+.content-title {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	color: #000;
 }
 
 /************Footer************/
@@ -107,6 +140,7 @@ body {}
     text-align: center;
     padding: 4% 15%;
     color: rgb(255, 255, 255);
+    margin-top: 20px;
 }
 .social-icons {
     margin: 20px 15px;
@@ -118,4 +152,7 @@ body {}
 .social-icons .fa:hover, .social-icons .fab:hover {
     color: rgb(255, 255, 255);
 
+}
+.footer>p {
+	line-height: 5.0;
 }

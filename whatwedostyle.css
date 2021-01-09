@@ -1,4 +1,7 @@
-body {}
+body {
+	font-family: "Montserrat";
+	overflow-x: hidden;
+}
 .navbar {
 	padding: 0;
 
@@ -35,9 +38,19 @@ body {}
 	margin-left: auto;
 }
 .nav-item {
-	padding-left: 70px;
+	width: 200px;
+	background-size: 110px 40px;
+	border-radius: 50px;
+	background: #556052;
+	box-shadow: inset 20px 20px 60px #222621,
+            	inset -20px -20px 60px #889a83;
 
 }
+.fa, .fab, .fas{
+	padding-left: 0px;
+    padding-right: 15px;
+	color: #fadcaa;
+} 
 .nav-link {
 	color: #fadcaa;
 
@@ -88,16 +101,10 @@ body {}
 }
 
 /***************Introductory Section*****************/
-.intro-note {
-	background-color: #8db596;
-	box-sizing: border-box;
-	display: block;
-	padding: 100px 20% 7%;
-}
 
 .main-content {
 	font-family: ;
-	margin-top: 120px;
+	margin-top: 110px;
 	text-align: center;
 	color: #556052;
 }
@@ -108,15 +115,22 @@ body {}
 
 .section-heading {
 	align-self: center;
-	height: 300px;
-	padding-top: 50px;
+	height: 200px;
+	padding-top: 20px;
 	background-size: contain;
 	opacity: 0.28;
 	color: #d6e6f2;
 	background-image: url(meeting.jpg);
-/*	background-size: 800px 300px;
-*/	margin-bottom: 0px;
+	margin-bottom: 0px;
 
+}
+.section-heading>h1 {
+/*	font-size: 80px;
+	font-weight: 120px;
+	line-height: 150px;*/
+	font-size: 70px;
+	line-height: 150px;
+	margin-bottom: 0px;
 }
 .section-message {
 	background-color: #8db596;
@@ -127,24 +141,18 @@ body {}
 }
 .content-heading {
 	padding-top: 30px;
-
-}
-.content-heading>h3 {
+	color: #000;
 	padding-bottom: 30px;
+	line-height: 2.0;
 	
 }
-
+	/*Space below last paragraph*/
 p:last-child {
 	padding-bottom: 50px;
 }
 
-.content-heading>p {
-	
-}
-.intro-note-para {
-	font-family: "Ubuntu";
-	font-size: 1.5rem;
-}
+
+
 
 /************Footer************/
 
@@ -165,7 +173,9 @@ p:last-child {
     color: rgb(255, 255, 255);
 
 }
-
+.footer>p {
+	line-height: 5.0;
+}
 
 /*****************Responsive Viewport**********************/
 @media (min-width: 576px) {

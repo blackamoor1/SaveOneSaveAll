@@ -1,4 +1,7 @@
-body {}
+body {
+	font-family: "Montserrat";
+	overflow-x: hidden;
+}
 .navbar {
 	padding: 0;
 
@@ -35,13 +38,18 @@ body {}
 	margin-left: auto;
 }
 .nav-item {
-	padding-left: 70px;
-/*	background-size: 110px 40px;
+	width: 200px; 
+	background-size: 110px 40px;
 	border-radius: 50px;
 	background: #556052;
 	box-shadow: inset 20px 20px 60px #222621,
             	inset -20px -20px 60px #889a83;
-*/}
+}
+.fa, .fab, .fas{
+	padding-left: 0px;
+    padding-right: 15px;
+	color: #fadcaa;
+} 
 .nav-link {
 	color: #fadcaa;
 
@@ -98,14 +106,17 @@ body {}
 	background-color: #8db596;
 	padding: 150px 150px 50px;
 	margin-bottom: 20px;
+
 }
 form {
-
+	width: 60%;
+	margin: 0 auto;
 }
 
 .form-content>label {
-	margin-right: 100px;
-	width: 80px;
+	line-height: 3;
+	margin-right: 60px;
+	width: 120px;
 }
 form>div>input {
 	background-color: #fff4e1;
@@ -146,4 +157,7 @@ textarea {
 .social-icons .fa:hover, .social-icons .fab:hover {
     color: rgb(255, 255, 255);
 
+}
+.footer>p {
+	line-height: 5.0;
 }

@@ -1,4 +1,6 @@
-body {}
+body {
+	font-family: "Montserrat";
+}
 .navbar {
 	padding: 0;
 
@@ -35,7 +37,18 @@ body {}
 	margin-left: auto;
 }
 .nav-item {
-	padding-left: 70px;
+	width: 200px;
+	background-size: 110px 40px;
+	border-radius: 50px;
+	background: #556052;
+	box-shadow: inset 20px 20px 60px #222621,
+            	inset -20px -20px 60px #889a83;
+}
+.fa, .fab, .fas{
+	padding-left: 0px;
+    padding-right: 15px;
+	color: #fadcaa;
+} 
 
 }
 .nav-link {
@@ -142,6 +155,7 @@ body {}
     text-align: center;
     padding: 4% 15%;
     color: rgb(255, 255, 255);
+    margin-top: 20px;
 }
 .social-icons {
     margin: 20px 15px;
@@ -154,7 +168,9 @@ body {}
     color: rgb(255, 255, 255);
 
 }
-
+.footer>p {
+	line-height: 5.0;
+}
 
 /*****************Responsive Viewport**********************/
 @media (min-width: 576px) {

@@ -1,4 +1,6 @@
-body {}
+body {
+	font-family: "Montserrat";
+}
 .navbar {
 	padding: 0;
 
@@ -35,13 +37,18 @@ body {}
 	margin-left: auto;
 }
 .nav-item {
-	padding-left: 70px;
-/*	background-size: 110px 40px;
+	width: 195px;
+	background-size: 110px 40px;
 	border-radius: 50px;
 	background: #556052;
 	box-shadow: inset 20px 20px 60px #222621,
             	inset -20px -20px 60px #889a83;
-*/}
+}
+.fa, .fab,.fal, .fas{
+	padding-left: 0px;
+    padding-right: 15px;
+	color: #fadcaa;
+} 
 .nav-link {
 	color: #fadcaa;
 
@@ -90,7 +97,7 @@ body {}
   background-color: #fff;
   border-color: #f08a5d;
 }
-
+ 
 /***************Introductory Section*****************/
 .intro-note {
 	background-color: #8db596;
@@ -106,7 +113,7 @@ body {}
 	padding: 20px 25px;
 	box-shadow:  20px 20px 60px #789a80,
              	-20px -20px 60px #a2d0ad;
-	border-radius: 40px 0 40px 0;
+	border-radius: 0 0 40px 0;
 	background: #8db596;
 /*	box-shadow: inset 20px 20px 60px #6e8d75,
             	inset -20px -20px 60px #acddb7;*/
@@ -114,28 +121,35 @@ body {}
 }
 
 .intro-note-heading {
+	background-image: url(sosailogo.jpg);
+	background-size: 800px 110px;
+	background-repeat: no-repeat;
+	background-color: transparent;
+	border-radius: 40px 0 0 0;
+	line-height: 1.8;
 	font-family: "Sacramento" ;
 	font-size: 3.5rem;
+	font-weight: 900px;
 	text-align: center;
 	color: #556052;
 }
 .save-1 {
-
+	color: red;
 }
 
 .one {
-	color: #f05454;
+	color: blue;
 }
 .save-2 {
-	color: #295939;
+	color: green;
 }
 
 .all {
-	color: #1f6f8b;
+	color: #f5b461;
 }
 
 .init {
-	color: #f5b461;
+	color: black;
 }
 
 .intro-note-para {
@@ -150,6 +164,7 @@ body {}
     text-align: center;
     padding: 4% 15%;
     color: rgb(255, 255, 255);
+    margin-top: 20px;
 }
 .social-icons {
     margin: 20px 15px;
@@ -161,6 +176,9 @@ body {}
 .social-icons .fa:hover, .social-icons .fab:hover {
     color: rgb(255, 255, 255);
 
+}
+.footer>p {
+	line-height: 5.0;
 }
 
 

@@ -4,26 +4,30 @@ body {
 }
 
 .navbar {
-	background-color: #556052;
 	border-radius: 40px 0 40px 0;
+	height: 110px;
+	padding: 0;
 }
 .navbar-brand {
-	width: 110px;
-	height: 110px;
-	border-radius: 70px;
-	background-color: #556052;
+	margin-left: 10px;
+	position: relative;
+	align-items: center;
+	width: 90px;
+	height: 90px;
+	border-radius: 50%;
 	box-shadow: inset  2px 2px 6px  rgba(255, 255, 255, 0.75),
 				inset  2px 2px 8px  rgba(255, 255, 255, 0.50),
 				inset  2px 2px 8px  rgba(255, 255, 255, 0.10),
                   -2px -2px 6px  rgba(0, 0, 0, 0.20);
 }
 .navbar-logo {
-	background-color: #556052;
-	border-radius: 50px;
-	margin-left: 0px;
-	margin-bottom: 0px;
+	content: '';
+	position: absolute;
+	border-radius: 50%;
+	width: 80%;
+	height: 80%;
 	padding-top: 4px;
-	padding-right: 2px;
+	padding-right: 4px;
 }
 .neu-navbar {
 	padding-top: 8px;
@@ -38,23 +42,19 @@ body {
 	width: 195px;
 	background-size: 110px 40px;
 	border-radius: 50px;
-	background: #556052;
 	box-shadow: inset 20px 20px 60px #222621,
             	inset -20px -20px 60px #889a83;
 }
 .fa, .fab, .fas{
 	padding-left: 0px;
     padding-right: 15px;
-	color: #fadcaa;
 } 
 .nav-link {
-	color: #fadcaa;
 
 }
 .navbar-dark .navbar-brand {
-  color: #fadcaa;
 }
-.navbar-dark .navbar-brand:hover, .navbar-dark .navbar-brand:focus {
+.fa, .fab, .fas, .nav-link, .navbar-dark .navbar-brand,.navbar-dark .navbar-brand:hover, .navbar-dark .navbar-brand:focus {
   color: #fadcaa;
 }
 .navbar-dark .navbar-nav .nav-link {
@@ -90,10 +90,14 @@ body {
 	width: 136px;
 	border-radius: 18px;
 }
-.donate-btn:hover {
-  color: #f08a5d;
-  background-color: #fff;
-  border-color: #f08a5d;
+.donate-btn:hover, .donate-btn:focus {
+  	color: #f08a5d;
+  	background-color: #fff;
+  	border-color: #f08a5d;
+}
+
+.navbar, .navbar-brand, .navbar-logo, .nav-item, .footer {
+	background-color: #556052;
 }
 
 /*****************Main Content********************/
@@ -104,14 +108,14 @@ body {
 	background-color: transparent;
 	font-size: 80px;
 	font-weight: 120px;
-	padding-top: 120px;
-	text-align: center;
+	padding-top: 110px;
 	background-repeat: no-repeat,
   		no-repeat,
       	no-repeat;
   	background-position: center,
   		bottom right,
-      	bottom left;}
+      	bottom left;
+}
 
 .main-heading>h1 {
 	font-size: 70px;
@@ -121,7 +125,6 @@ body {
 }
 .main-content {
 	background-color: #8db596;
-	text-align: center;
 	padding-left: 5%;
 	padding-right: 5%;
 
@@ -133,11 +136,12 @@ body {
 	color: #000;
 }
 
+.main-heading, .main-content, .footer {
+    text-align: center;
+}
 /************Footer************/
 
 .footer {
-    background-color: #556052;
-    text-align: center;
     padding: 4% 15%;
     color: rgb(255, 255, 255);
     margin-top: 20px;
